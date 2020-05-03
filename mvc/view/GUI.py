@@ -1,5 +1,5 @@
 import pygame
-from Tile import Tile
+from mvc.view.Tile import Tile
 
 
 # IMPORTANT RESOURCES USED:

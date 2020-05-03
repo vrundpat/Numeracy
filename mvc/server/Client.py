@@ -5,7 +5,9 @@ import pickle
 class Client:
     def __init__(self):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # The socket is created on instantiation
-        #  self.server = "192.168.1.28"  # IP of the server
+
+        # Typically the servr IP would be the server's IP but since the server and client on the same machine, this hould be fine
+        # If server was running remotely, the line would become: self.server = "10.0.0.128" (THE server machine IP)
         self.server = socket.gethostbyname(socket.gethostname())
         self.port = 8080  # Port server is running on
         self.server_address = (self.server, self.port)  # Address Tuple

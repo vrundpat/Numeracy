@@ -1,7 +1,7 @@
 import socket
 from _thread import *
 from threading import Thread
-from NeuralNetwork import NeuralNetwork
+from mvc.model.NeuralNetwork import NeuralNetwork
 import mnist
 import keras
 import pickle
@@ -84,8 +84,7 @@ def model_accuracy_thread(args):
 
 
 #  SERVER IP
-# server = "192.168.1.28"  # MUST CHANGE TO THE IPV4 OF THE MACHINE RUNNING THE SERVER
-server = socket.gethostbyname(socket.gethostname())
+server = socket.gethostbyname(socket.gethostname())  # The Server IP becomes the IPV4 of the macine running the server
 port = 8080  # Run on port 8080
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create the socket object with the given properties to stream data

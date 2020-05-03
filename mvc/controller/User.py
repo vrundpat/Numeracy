@@ -1,6 +1,6 @@
-from GUI import Grid
+from mvc.view.GUI import Grid
 import pygame
-from Client import Client
+from mvc.server.Client import Client
 
 
 class User(object):
