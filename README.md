@@ -8,9 +8,14 @@ for model classification purposes.
 
 Instructions to run:
   - Ensure all dependences are installed correctly
-  - First run Server.py 
-  - Next, simply run main.py
+  - First, nagivatete to mvc.server and run Server.py 
+    - If you plan to run the server remotely:
+      - Change "server" in Server.py to the IP Address of machine the sever runs on
+      
+  - Next, simply run main.py in the main directory
   
+
 During run time:
   - The key 'w' will send the 'get_accuracy' message to the sever and update the accuracy on the GUI
   - Any other key press will send the 'prediction' message to the server and update the prediction tracker on the GUI
+  - Note: Future commits will have button functionality for these tasks!
