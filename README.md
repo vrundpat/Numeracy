@@ -5,3 +5,12 @@ Using python sockets and threading, deploy the model onto a server instance in o
 multiple user interaction.
 PyGame GUI is provided so the users can give input to the model in terms of hand-written digits
 for model classification purposes.
+
+Instructions to run:
+  - Ensure all dependences are installed correctly
+  - First run Server.py 
+  - Next, simply run main.py
+  
+During run time:
+  - The key 'w' will send the 'get_accuracy' message to the sever and update the accuracy on the GUI
+  - Any other key press will send the 'prediction' message to the server and update the prediction tracker on the GUI
