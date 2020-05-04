@@ -29,7 +29,7 @@ def client_thread_for_persistence(connection):
     while True:  # This loop will run on the new thread created for this client and persist while listening for messages
 
         # Try Statements have to be used as the recv() function is a blocking function (execution in the loop will wait until the client sends a message)
-        # and this message could be more than 2048 bytes, which would cause an error. In data larger than 2048 bytes is sent, thread will end.
+        # and this message could be more than 4096 bytes, which would cause an error. In data larger than 2048 bytes is sent, thread will end.
         try:
             data = connection.recv(4096)  # Blocking function which will wait for messages limited to 2048 bytes as the data size required for this software is minimal
             data = pickle.loads(data)  # Load the pickled object into usable python

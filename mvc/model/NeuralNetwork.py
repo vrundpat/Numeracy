@@ -136,7 +136,7 @@ class NeuralNetwork(object):
         for i in range(len(self.layers), 0, -1): # Iterate until all layers have had their corresponding weights adjusted
             if i == len(self.layers): # The output layer
                 current_layer_delta = self.calculate_error(self.layer_outputs[str(i)], self.output)  # Error in output layer is the direct error in the network's prediction
-                self.wb["w" + str(i)] -= self.learning_rate * np.dot(self.layer_outputs[str(i - 1)].T,current_layer_delta)
+                self.wb["w" + str(i)] -= self.learning_rate * np.dot(self.layer_outputs[str(i - 1)].T, current_layer_delta)
 
                 # Since the bias will has a derivative of 1 (dO/aB = 1), it gets adjusted using the total sum of the error in a particular layer
                 self.wb["b" + str(i)] -= self.learning_rate * np.sum(current_layer_delta)

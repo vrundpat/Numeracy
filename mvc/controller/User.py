@@ -32,7 +32,7 @@ class User(object):
                     if 4 <= int(x) <= 23 and 4 <= int(y) <= 23:
                         neighboring_tiles = gui.getNeighbors(int(x), int(y))  # Get the neighbors of the clicked tile
 
-                        # Since this is where the cursor was most prominently placed, this tiel will get a gray scale of 1 (compltely black)
+                        # Since this is where the cursor was most prominently placed, this tile will get a gray scale of 1 (compltely black)
                         neighboring_tiles[0].gs_value = 1
                         neighboring_tiles[0].color = (0, 0, 0)
                         neighboring_tiles[0].draw()
