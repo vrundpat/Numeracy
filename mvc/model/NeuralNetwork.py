@@ -179,7 +179,7 @@ class NeuralNetwork(object):
         :param train_outputs: MINST Train Labels
         :return: None
         """
-        if self.epochs == 10: return
+        if self.epochs == 5: return
         for i in range(len(train_inputs)):
             self.input = train_inputs[i]
             self.output = train_outputs[i]

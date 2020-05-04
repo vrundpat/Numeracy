@@ -10,6 +10,7 @@ class Tile(object):
         self.h = h  # height
         self.window = window  # Refrence to the pygame window
         self.color = (255, 255, 255)  # RGB Color values for white
+        self.gs_value = 0 # Gray scale value
 
     def draw(self):
         """

@@ -1,5 +1,6 @@
 import pygame
 from mvc.view.Tile import Tile
+import random
 
 
 # IMPORTANT RESOURCES USED:
@@ -60,7 +61,8 @@ class Grid(object):
         """
         for row in self.tiles:
             for col in row:
-                col.color = (255, 255, 255)
+                col.color = (255, 255, 255) # On reset, the drawing space is cleared
+                col.gs_value = 0 # All tiles have a default grayscale value of 0
         self.window.fill(COLOR)
         self.gui_update()
 
@@ -93,8 +95,8 @@ class Grid(object):
         for row in self.tiles:
             temp = []  # 1-D List to hold each row
             for col in row:
-                if col.color == (0, 0, 0):  # If Tile is colored, append 1 (skewed Highest Gray-Scale value)
-                    temp.append(1)
+                if col.color == (0, 0, 0):  # If Tile is colored, append this tile's grayscale values )
+                    temp.append(col.gs_value)
                 else:
                     temp.append(0)  # If the Tile is uncolored, append 0 (lowest Gray-Scale value)
             matrix.append(temp)  # Append the row onto the Matrix
