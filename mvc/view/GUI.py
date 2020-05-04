@@ -38,9 +38,6 @@ class Grid(object):
         Draw the lines of the Grid and the Red Box for drawing on the PyGame window
         :return: None
         """
-        # Base for the Text
-        pygame.draw.rect(self.window, (0, 0, 0), (0, 0, WIN_LENGTH, 40))
-
         # Line drawing function: pygame.draw.line(window, RGB color Tuple, Start Point, End Point
         for pix in range(WIN_LENGTH // width):  # Draw WIN_LENGTH / WIDTH + 1 horizontal and vertical lines on the screen sapce
             pygame.draw.line(self.window, (12, 149, 240), (pix * width, 0), (pix * width, WIN_HEIGHT))
@@ -52,6 +49,8 @@ class Grid(object):
         pygame.draw.line(self.window, (61, 104, 189), (24 * 20, 4 * 20), (24 * 20, 24 * 20), 2)
         pygame.draw.line(self.window, (61, 104, 189), (4 * 20, 24 * 20), (24 * 20, 24 * 20), 2)
 
+        # Base for the Text
+        pygame.draw.rect(self.window, (0, 0, 0), (0, 0, WIN_LENGTH, 40))
         self.blit_text()
 
     def reset(self):
