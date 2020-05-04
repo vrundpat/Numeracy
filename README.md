@@ -7,7 +7,7 @@ multiple user interactions
 for model classification purposes.
 
 
-RUN INSTRUCTIONS:
+INSTRUCTIONS TO RUN THE PROGRAM:
   - Ensure all dependences are installed correctly
   - First, nagivatete to mvc.server and run Server.py 
     - If you plan to run the server remotely:
