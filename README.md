@@ -1,10 +1,5 @@
 # DigitRecognition
-- Created a Dense neural-network framework using Python and Numpy.
-- Used supervised training and backpropagation to train the model on the MNIST Database.
-- Using python sockets and threading, the model is deployed onto a server instance in order to allow 
-multiple user interactions
-- PyGame GUI is provided so the users can give input to the model in terms of hand-written digits
-for model classification purposes.
+Created a Dense neural-network framework using Python and Numpy for Digit Analysis. Employed a web socket server to allow multiple users to interact with their own instance of a model as it progresses in terms of accuracy. Implemented GUI to allow the user to give input to the network and make predictions on their written text.
 
 
 INSTRUCTIONS TO RUN THE PROGRAM:
