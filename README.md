@@ -1,21 +1,16 @@
 # DigitRecognition
-- Created a Dense neural-network framework using Python and Numpy.
-- Used supervised training and backpropagation to train the model on the MNIST Database.
-- Using python sockets and threading, deploy the model onto a server instance in order to allow 
-multiple user interactions
-- PyGame GUI is provided so the users can give input to the model in terms of hand-written digits
-for model classification purposes.
+Created a Dense neural-network framework using Python and Numpy for Digit Analysis. Employed a web socket server to allow multiple users to interact with their own instance of a model as it progresses in terms of accuracy. Implemented GUI to allow the user to give input to the network and make predictions on their written text.
 
 
-RUN INSTRUCTIONS:
+INSTRUCTIONS TO RUN THE PROGRAM:
   - Ensure all dependences are installed correctly
   - First, nagivatete to mvc.server and run Server.py 
     - If you plan to run the server remotely:
       - Change "server" in Server.py to the IP Address of machine the sever runs on
-      - Note: Thre may be instance where your OS firewalls may block the existing connecting method using hostname, in that case:
+      - Note: Thre may be instances where your OS firewalls may block the existing connecting method using hostname, in that case:
             - Change the "server" state variable near the bottom of the Server.py file to the IPV4 of the machine running this server
                 - Sample: server = "192.168.x.y" or any other valid IP
-            - Next, navigate to the Client.py file in the same subpackage and change the class' "self.server" variable to the the IP of the machein runnign the server
+            - Next, navigate to the Client.py file in the same subpackage and change the class' "self.server" variable to the the IP of the machine running the server
             
   - Next, simply run main.py in the main directory
   - IMPORTANT NOTE: 
