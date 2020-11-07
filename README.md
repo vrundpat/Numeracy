@@ -1,5 +1,5 @@
 # Numeracy: Image Analysis
-Created a Dense neural-network framework using Python and Numpy for Digit Analysis. Employed a web socket server to allow multiple users to interact with their own instance of a model as it progresses in terms of accuracy. Implemented GUI to allow the user to give input to the network and make predictions on their written text.
+A Dense Neural Network (DNN) Framework built using pure Python which comes integreated into a socket server that utilizes threading to support & provide multiple concurrent users with an instance of their own neural network! Accompanied by a PyGame GUI, users can give their NN instance inputs in forms of hand written digits and train the network! The mixture of MNIST, Sci-kit databses along with human induced inputs results in some pretty accurate predictions from the NN, achieving 96% accuracy on user inputs, and near perfect accuracy on the data sets.
 
 Below are some samples of the GUI, although its not best representative of the code, it captures the gist of the program's aim! These are samples of digits written by me and overtime the DNN becomes extremely accurate. It reaches nearly a perfect accuracy on the MNIST data set, but as human induced input is more unpredictable, its not quite perfect but it's close!
 \n
