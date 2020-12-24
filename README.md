@@ -3,10 +3,14 @@ A Dense Neural Network (DNN) Framework built using pure Python which comes integ
 
 Below are some samples of the GUI, although its not best representative of the code, it captures the gist of the program's aim! These are samples of digits written by me and overtime the DNN becomes extremely accurate. It reaches nearly a perfect accuracy on the MNIST data set, but as human induced input is more unpredictable, its not quite perfect but it's close!
 \n
-| Start with this  | End with this! | End with this! | End with this! |
-| ------------- | ------------- | ------------- | ------------- |
-| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/BadPredict1.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict0.png)  | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict2.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict8.png)  |
+| Start with this  | End with this! | 
+| ------------- | ------------- |
+| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/BadPredict1.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict0.png)  | ![ScreenShot]
 
+
+| End with this  | End with this!
+| ------------- | ------------- |
+| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict2.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict8.png)  | ![ScreenShot]
 
 ## INSTRUCTIONS TO RUN THE PROGRAM:
   - Ensure all dependences are installed correctly
