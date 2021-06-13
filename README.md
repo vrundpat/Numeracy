@@ -1,6 +1,15 @@
 # Numeracy: Image Analysis
 A Dense Neural Network (DNN) Framework built using pure Python which comes integreated into a socket server that utilizes threading to support & provide multiple concurrent users with an instance of their own neural network! Accompanied by a PyGame GUI, users can give their NN instance inputs in forms of hand written digits and train the network! The mixture of MNIST, Sci-kit databses along with human induced inputs results in some pretty accurate predictions from the NN, achieving 96% accuracy on user inputs, and near perfect accuracy on the data sets.
 
+###
+[![Language](https://img.shields.io/badge/Language-Python-blue)](https://shields.io/)
+[![Server](https://img.shields.io/badge/Server-Socket.io-blue)](https://shields.io/)
+[![GUI](https://img.shields.io/badge/GUI-PyGame-blue)]()
+[![Network Model](https://img.shields.io/badge/Network%20Model-Custom-blue)]()
+[![Package Manager](https://img.shields.io/badge/Package%20Manager-Pip-pink)](https://shields.io/)
+[![Version](https://img.shields.io/badge/Version-1.0.0-green)]()
+
+###
 Below are some samples of the GUI, although its not best representative of the code, it captures the gist of the program's aim! These are samples of digits written by me and overtime the DNN becomes extremely accurate. It reaches nearly a perfect accuracy on the MNIST data set, but as human induced input is more unpredictable, its not quite perfect but it's close!
 \n
 | Start with this  | End with this! | 
@@ -12,7 +21,7 @@ Below are some samples of the GUI, although its not best representative of the c
 | ------------- | ------------- |
 | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict2.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict8.png)  | ![ScreenShot]
 
-## INSTRUCTIONS TO RUN THE PROGRAM:
+## Running the Program:
   - Ensure all dependences are installed correctly
   - First, nagivatete to mvc.server and run Server.py 
     - If you plan to run the server remotely:
@@ -23,12 +32,12 @@ Below are some samples of the GUI, although its not best representative of the c
             - Next, navigate to the Client.py file in the same subpackage and change the class' ```self.server``` variable to the the IP of the machine running the server
             
   - Next, simply run ```main.py``` in the main directory
-  #### IMPORTANT NOTE: 
+  #### Disclaimer: 
   - To connect multiple clients, you may have to use the terminal to run another instance of the main.py file, but if your IDE/environent allows, simply run another instance of main.py
    
   
 
-## DURING RUN TIME:
+## GUI Controls:
   - ```Mouse Right Click``` will "clear" the drawing box
   - The key ```'w'``` will send the ```get_accuracy``` message to the sever and update the accuracy on the GUI
   - ```Any other key press``` will send the ```prediction``` message to the server and update the prediction tracker on the GUI
