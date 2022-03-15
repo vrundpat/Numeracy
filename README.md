@@ -1,5 +1,5 @@
 # Numeracy: Image Analysis
-A Dense Neural Network (DNN) Framework built using pure Python which comes integreated into a socket server that utilizes threading to support & provide multiple concurrent users with an instance of their own neural network! Accompanied by a PyGame GUI, users can give their NN instance inputs in forms of hand written digits and train the network! The mixture of MNIST, Sci-kit databses along with human induced inputs results in some pretty accurate predictions from the NN, achieving 96% accuracy on user inputs, and near perfect accuracy on the data sets.
+A Dense Neural Network (DNN) Framework built using Python, which comes integreated with a socket server that utilizes threading to support & provide multiple concurrent users with an instance of their own neural network! Accompanied by a PyGame GUI, users can give their NN instance inputs in forms of hand written digits and train the network! The mixture of MNIST, Sci-kit databses along with human induced inputs results in some pretty accurate predictions from the NN, achieving 96% accuracy on user inputs, and near perfect accuracy on the data sets.
 
 ###
 [![Language](https://img.shields.io/badge/Language-Python-blue)](https://shields.io/)
@@ -9,17 +9,16 @@ A Dense Neural Network (DNN) Framework built using pure Python which comes integ
 [![Package Manager](https://img.shields.io/badge/Package%20Manager-Pip-pink)](https://shields.io/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-green)]()
 
-###
-Below are some samples of the GUI, although its not best representative of the code, it captures the gist of the program's aim! These are samples of digits written by me and overtime the DNN becomes extremely accurate. It reaches nearly a perfect accuracy on the MNIST data set, but as human induced input is more unpredictable, its not quite perfect but it's close!
-\n
-| Start with this  | End with this! | 
-| ------------- | ------------- |
-| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/BadPredict1.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict0.png)  | ![ScreenShot]
 
+|Overview| Untrained Model |
+|-------------| ------------- |
+|Here are some samples of the GUI, although its not best representative of the code, it captures the gist of the program's aim! These are samples of digits written by me and overtime the DNN becomes extremely accurate. It reaches nearly a perfect accuracy on the MNIST data set, but as human induced input is more unpredictable, its not quite perfect but it's close!| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/BadPredict1.png) |
 
-| End with this  | End with this!
-| ------------- | ------------- |
-| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict2.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict8.png)  | ![ScreenShot]
+<br>
+
+|  Trained Model  |  Trained Model |  Trained Model |
+|  -------------  |  ------------- |  ------------- |
+| ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict2.png) | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict8.png)  | ![ScreenShot](https://raw.github.com/vrundpat/Numeracy/master/Previews/GoodPredict0.png)  |
 
 ## Running the Program:
   - Ensure all dependences are installed correctly
